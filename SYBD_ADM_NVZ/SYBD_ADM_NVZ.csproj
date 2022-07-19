@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1651BBF7-62B7-4267-ACBE-C42150EBA185}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SYBD_ADM_NVZ</RootNamespace>
+    <AssemblyName>SYBD_ADM_NVZ</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB_ADM_NVZDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_ADM_NVZDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeOfThePersonnelDepartment\FormAllApplications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeOfThePersonnelDepartment\FormAllApplications.Designer.cs">
+      <DependentUpon>FormAllApplications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeOfThePersonnelDepartment\FormApplicationForChangingPersonalData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeOfThePersonnelDepartment\FormApplicationForChangingPersonalData.Designer.cs">
+      <DependentUpon>FormApplicationForChangingPersonalData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeOfThePersonnelDepartment\FormApplicationForDismissal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeOfThePersonnelDepartment\FormApplicationForDismissal.Designer.cs">
+      <DependentUpon>FormApplicationForDismissal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeOfThePersonnelDepartment\FormApplicationForEmployment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeOfThePersonnelDepartment\FormApplicationForEmployment.Designer.cs">
+      <DependentUpon>FormApplicationForEmployment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeOfThePersonnelDepartment\FormApplicationsVacationOrSickLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeOfThePersonnelDepartment\FormApplicationsVacationOrSickLeave.Designer.cs">
+      <DependentUpon>FormApplicationsVacationOrSickLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAuthorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAuthorization.Designer.cs">
+      <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProfile.Designer.cs">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\FormApplicationsApplicationsForConsideration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\FormApplicationsApplicationsForConsideration.Designer.cs">
+      <DependentUpon>FormApplicationsApplicationsForConsideration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SystemAdministrator\FormCheckAndIssueLoginDetailsForSpecialWorkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SystemAdministrator\FormCheckAndIssueLoginDetailsForSpecialWorkers.Designer.cs">
+      <DependentUpon>FormCheckAndIssueLoginDetailsForSpecialWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SystemAdministrator\FormMakeChangesToTheDatabaseDasedOnTheAcceptedStatements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SystemAdministrator\FormMakeChangesToTheDatabaseDasedOnTheAcceptedStatements.Designer.cs">
+      <DependentUpon>FormMakeChangesToTheDatabaseDasedOnTheAcceptedStatements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeOfThePersonnelDepartment\FormAllApplications.resx">
+      <DependentUpon>FormAllApplications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeOfThePersonnelDepartment\FormApplicationForChangingPersonalData.resx">
+      <DependentUpon>FormApplicationForChangingPersonalData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeOfThePersonnelDepartment\FormApplicationForDismissal.resx">
+      <DependentUpon>FormApplicationForDismissal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeOfThePersonnelDepartment\FormApplicationForEmployment.resx">
+      <DependentUpon>FormApplicationForEmployment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeOfThePersonnelDepartment\FormApplicationsVacationOrSickLeave.resx">
+      <DependentUpon>FormApplicationsVacationOrSickLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAuthorization.resx">
+      <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormProfile.resx">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\FormApplicationsApplicationsForConsideration.resx">
+      <DependentUpon>FormApplicationsApplicationsForConsideration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SystemAdministrator\FormCheckAndIssueLoginDetailsForSpecialWorkers.resx">
+      <DependentUpon>FormCheckAndIssueLoginDetailsForSpecialWorkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SystemAdministrator\FormMakeChangesToTheDatabaseDasedOnTheAcceptedStatements.resx">
+      <DependentUpon>FormMakeChangesToTheDatabaseDasedOnTheAcceptedStatements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DB_ADM_NVZDataSet.xsc">
+      <DependentUpon>DB_ADM_NVZDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_ADM_NVZDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_ADM_NVZDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_ADM_NVZDataSet.xss">
+      <DependentUpon>DB_ADM_NVZDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-юзер-в-круге-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-восстановить-пароль-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-вход-в-систему,-в-кружке,-стрелка-вправо-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-показать-пароль-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-бронирование-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-войти-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-удалить-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium-icon-office-worker-3502880.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4086641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4086569.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-бронирование-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
