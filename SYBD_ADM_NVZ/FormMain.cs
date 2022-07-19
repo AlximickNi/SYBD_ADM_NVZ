@@ -285,8 +285,6 @@ from Worker";
         private int tempIndex;
         private Form ActiveForm;
 
-        //public static string TxtCon = "Data Source=213.155.192.79,3002;Initial Catalog=DB_ADM_NVZ2;User ID=u20anisch;Password=au5p";
-
         public static string TxtCon = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DB_ADM_NVZ1.mdf;Integrated Security = True; Connect Timeout = 30";
         public static string Id_Special_Worker = "";
         public static string Role_Special_Worker = "";
